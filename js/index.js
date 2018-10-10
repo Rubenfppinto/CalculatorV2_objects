@@ -16,22 +16,22 @@ if (choice=="regular") {
   switch (arithmetic) {
     case calculation.add:
       num1 = parseInt(prompt("What is the first number?"));
-      num2 = parseInt(prompt("What is the second number?"))
+      num2 = parseInt(prompt("What is the second number?"));
       console.log(num1+num2);
       break;
     case calculation.sub:
       num1 = parseInt(prompt("What is the first number?"));
-      num2 = parseInt(prompt("What is the second number?"))
+      num2 = parseInt(prompt("What is the second number?"));
       console.log(num1-num2);
       break;
     case calculation.mul:
       num1 = parseInt(prompt("What is the first number?"));
-      num2 = parseInt(prompt("What is the second number?"))
+      num2 = parseInt(prompt("What is the second number?"));
       console.log(num1*num2);
       break;
     case calculation.div:
       num1 = parseInt(prompt("What is the first number?"));
-      num2 = parseInt(prompt("What is the second number?"))
+      num2 = parseInt(prompt("What is the second number?"));
         if (num2==0) {
           console.log("operation not possible because you cannot divide by zero");
         }else {
@@ -40,31 +40,20 @@ if (choice=="regular") {
       break;
     default:
       console.log("Wrong input. Try again!");
-    }
   }
-  // console.log (calculation.add);
-    // if (arithmetic="+") {
-    //   num1 = parseInt(prompt("Introduce first number"));
-    //   num2 = parseInt(prompt("Introduce second number"));
-    //   console.log("calculation.add");
-    // }
-// }
-
-
-// switch (arithmetic) {
-//   case "+":
-//   console.log("faas");
-//     break;
-//   default:
-
-// }
-// if (choice="regular") {
-//   console.log("Hi");
-// }
-
-
-// for (var i=0; i<4 ; i++){
-//   if (choice){
-//
-//   }
-// }
+}else {
+  var arithmetic = prompt ("what type of advanced calculation would you like to do? (pow or sroot)");
+  switch (arithmetic) {
+    case calculation.pow:
+      num1 = parseInt(prompt("What is the first number?"));
+      num2 = parseInt(prompt("What is the power?"));
+      console.log(Math.pow (num1, num2));
+      break;
+    case calculation.sroot:
+      num1 = parseInt(prompt("What is the first number?"));
+      console.log(Math.sqrt(num1));
+      break;
+      default:
+      console.log ("Wrong input. try again!")
+    }
+}
